@@ -8,7 +8,7 @@
     /*Необходимо подсчитать, сколько было замерзание в этот период (замерзания, когда в какой-то день темп-ра плюсовая, а на следующий день минусовая).*/
     
     let qZamerzaniy = 0;
-    for (let i=0; i<winterDays.length; i++) {
+    for (let i=0; i<winterDays.length-1; i++) {
         if (winterDays[i] >=0 && winterDays[i+1]<0) {
             qZamerzaniy = qZamerzaniy+1;
         }
@@ -51,13 +51,10 @@
             /*console.log(`maxDays ${maxDays}`);*/
             /*qDays=0;*/
         } 
-
-
-         
+       
 
         /*qDays=0;*/
-             
-        
+                   
         
     }
 
